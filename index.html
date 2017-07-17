@@ -22,14 +22,10 @@
                       <div class="panel-body">
                           <div id="theCount" class="well">Counter</div>
                           <div class="btn-group">
-                              <button id="addMe" class="btn-success">Success!</button>
-                              <button id="subMe" class="btn-danger">Rejection!</button>
+                              <button id="addMe" class="btn btn-success ">Success!</button>
+                              <button id="subMe" class="btn btn-danger">Failure!</button>
                           </div>
-                          <div class="well-lg">
-                              <button type="button" class="btn btn-block btn-success" id="addMe">
-
-                              </button>
-                          </div>
+                          <hr>
                       </div>
 
               <div class="panel-footer">
@@ -47,6 +43,10 @@
       $("#addMe").click(function(){
           counter++;
           $("#theCount").text(counter);
+      });
+      $("#subMe").click(function(){
+          counter--;
+         $("#theCount").text(counter);
       });
   });
   </script>
