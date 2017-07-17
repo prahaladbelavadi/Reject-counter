@@ -20,16 +20,29 @@
               </div>
 
                       <div class="panel-body">
-                          <div id="theCount" class="well">Counter</div>
-                          <div class="btn-group">
-                              <button id="addMe" class="btn btn-success ">Success!</button>
+                          <div class="well well-sm">
+                            Counter:
+                          <div id="theCount"></div>
+                      </div>
+                          <div class="jumbotron">
+                              <button id="addMe" class="btn btn-success">Success!</button>
                               <button id="subMe" class="btn btn-danger">Failure!</button>
                           </div>
                           <hr>
+                          <blockquote cite="http://https://medium.com/javascript-scene/the-best-way-to-learn-to-code-is-to-code-learn-app-architecture-by-building-apps-7ec029db6e00">
+                              Rule:
+                          </blockquote>
+                          <ul>
+                              <li>
+                                  You must be rejected by a human being at least once per day.
+                              </li>
+                          </ul>
                       </div>
 
               <div class="panel-footer">
-
+                  <a href="https://medium.com/javascript-scene/the-best-way-to-learn-to-code-is-to-code-learn-app-architecture-by-building-apps-7ec029db6e00">
+                      Resource
+                  </a>
               </div>
             </div>
           </div>
@@ -45,9 +58,10 @@
           $("#theCount").text(counter);
       });
       $("#subMe").click(function(){
-          counter--;
+          counter = counter+10;
          $("#theCount").text(counter);
       });
+
   });
   </script>
 </html>
